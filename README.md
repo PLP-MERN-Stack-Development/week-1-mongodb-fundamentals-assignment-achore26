@@ -1,46 +1,46 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19645887&assignment_repo_type=AssignmentRepo)
-# MongoDB Fundamentals Assignment
+# 📚 MongoDB Fundamentals with Node.js
 
-This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
+This project demonstrates how to set up a Node.js application that connects to MongoDB and performs various database operations using JavaScript.
 
-## Assignment Overview
+## 📦 Prerequisites
 
-You will:
-1. Set up a MongoDB database
-2. Perform basic CRUD operations
-3. Write advanced queries with filtering, projection, and sorting
-4. Create aggregation pipelines for data analysis
-5. Implement indexing for performance optimization
+Before getting started, ensure the following are installed on your machine:
 
-## Getting Started
+- **[Node.js](https://nodejs.org/)** (v14 or higher recommended)
+- **MongoDB**
+  - Either installed and running locally (`mongodb://localhost:27017`)
+  - Or use a **MongoDB Atlas** cloud database (requires free account)
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+---
 
-## Files Included
+## 🚀 Getting Started
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+### 1. Clone the Repository
 
-## Requirements
+```bash
+git clone https://github.com/PLP-MERN-Stack-Development/week-1-mongodb-fundamentals-assignment-achore26.git
+cd week-1-mongodb-fundamentals-assignment-achore26
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
+2. Install Dependencies
+bash
+Copy code
+npm install
+⚙️ Configuration
+Update the MongoDB connection string and database name inside db.js.
 
-## Submission
+For local MongoDB:
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+js
+Copy code
+const uri = "mongodb://localhost:27017";
+const dbName = "school";
+For MongoDB Atlas, use the following pattern and replace placeholders:
 
-1. Complete all tasks in the assignment
-2. Add your `queries.js` file with all required MongoDB queries
-3. Include a screenshot of your MongoDB database
-4. Update the README.md with your specific setup instructions
+js
+Copy code
+const uri = "mongodb+srv://<username>:<password>@cluster.mongodb.net/?retryWrites=true&w=majority";
+const dbName = "school";
 
-## Resources
 
 - [MongoDB Documentation](https://docs.mongodb.com/)
 - [MongoDB University](https://university.mongodb.com/)
