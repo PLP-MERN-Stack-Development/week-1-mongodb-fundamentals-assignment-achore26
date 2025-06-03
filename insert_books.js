@@ -195,4 +195,6 @@ insertBooks().catch(console.error);
  *
  * 5. Find in-stock books:
  *    db.books.find({ in_stock: true })
- */ 
+ */
+
+/binsash: line 1: q: command not found
